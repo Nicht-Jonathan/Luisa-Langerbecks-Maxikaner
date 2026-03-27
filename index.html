@@ -49,11 +49,16 @@
             background-color: #1f1f1f; 
             border-radius: 10px;
             padding: 30px;
-            width: 300px;
+            
+            /* --- HIER SIND DIE ÄNDERUNGEN --- */
+            width: 100%;          /* Nimmt maximal den verfügbaren Platz ein */
+            max-width: 300px;     /* Wird aber nie breiter als 300px */
+            box-sizing: border-box; /* Verhindert, dass Padding die Box sprengt */
+            /* -------------------------------- */
+            
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
             transition: transform 0.3s ease;
-            
             text-decoration: none; 
             color: inherit; 
             display: block; 
